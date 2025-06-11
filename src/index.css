@@ -12,12 +12,12 @@
 
 html.dark {
   --color-bg: 3 7 18;
-  --color-bx: 17 24 39;
-  --box-borer: 243 244 246 / 0.1;
+  --color-box: 17 24 39;
+  --box-border: 243 244 246 / 0.1;
   --box-sd: transparent;
   --heading-1: 255 255 255;
   --heaidng-2: 243 244 246;
-  --heading-3: 209 213 219;
+  --heading-3: 209 213 219; /* 209 213 219 // 105 107 99 */ 
 }
 
 @layer utilities {
