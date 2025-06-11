@@ -1,4 +1,4 @@
-import { Container } from "../shared"
+import { Container, Paragraph } from "../shared"
 
 export const Hero = () => {
   return (
@@ -14,7 +14,12 @@ export const Hero = () => {
           </div>
 
           <div className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
-            <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">Empower Your Business <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">with AI</span> </h1>
+            <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">Empower Your Business <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">with AI</span>
+            </h1>
+
+            <Paragraph className="mt-8">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex deleniti natus velit quam corporis saepe laborum vel maxime quidem ratione?
+            </Paragraph>
           </div>
 
         </Container>
