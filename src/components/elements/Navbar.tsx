@@ -40,7 +40,7 @@ export const Navbar = () => {
         <div className="min-w-max flex items-center gap-x-3">
             <button 
               onClick={toggleTheme}
-              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border-box-border cursor-pointer"
+              className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
             >
               {theme === "dark" ? (
               <svg
@@ -49,7 +49,7 @@ export const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                 >
                   <path
                     strokeLinecap="round"
@@ -64,7 +64,7 @@ export const Navbar = () => {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5"
                 >
                   <path
                     strokeLinecap="round"
