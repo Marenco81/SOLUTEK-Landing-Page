@@ -1,5 +1,6 @@
 import { BtnLink, Container, NavItem } from "../shared"
 import logo from "../../assets/icon.png"
+import { useThemeStore } from "../../store";
 
 const navItems = [
   {href:"#", text: "Home"},
@@ -7,9 +8,10 @@ const navItems = [
   {href:"#about-us", text: "About Us"},
   {href:"#features", text: "Features"},
 
-]
+];
 
 export const Navbar = () => {
+  const {toggleTheme, theme} = useThemeStore();
   return (
     <header className="absolute inset-x-0 top-0 z-50 py-6"> 
       <Container>
