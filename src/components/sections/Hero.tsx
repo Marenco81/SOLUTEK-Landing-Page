@@ -50,7 +50,7 @@ export const Hero = () => {
                 />
 
                 <Button 
-                  className="min-w-max text-white"
+                  className="min-w-max text-white hover:bg-violet-900"
                 >
                   <span className="relative z-[5]">Get Started</span>
                 </Button>
