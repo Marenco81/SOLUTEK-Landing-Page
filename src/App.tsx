@@ -1,5 +1,5 @@
 import { Layout } from "./components/Layout"
-import { Brands, Hero } from "./components/sections"
+import { Brands, Hero, Services } from "./components/sections"
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <Layout title="EdgeAI">
       <Hero></Hero>
       <Brands></Brands>
+      <Services></Services>
     </Layout>
   )
 }
