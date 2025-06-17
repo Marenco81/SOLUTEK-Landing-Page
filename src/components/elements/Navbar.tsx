@@ -2,7 +2,7 @@ import { BtnLink, Container, NavItem } from "../shared"
 import logo from "../../assets/icon.png"
 import { useThemeStore } from "../../store";
 
-const navItems = [
+export const navItems = [
   {href:"#", text: "Home"},
   {href:"#services", text: "Services"},
   {href:"#about-us", text: "About Us"},
