@@ -1,5 +1,5 @@
 import { BtnLink, Container, NavItem } from "../shared"
-import logo from "../../assets/icon.png"
+import logo from "/assets/icon.png"
 import { useThemeStore } from "../../store";
 
 export const navItems = [

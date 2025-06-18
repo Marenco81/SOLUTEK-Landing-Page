@@ -1,5 +1,5 @@
 import { Container, NavItem } from "../shared"
-import logo from "../../assets/icon.png"
+import logo from "/assets/icon.png"
 import { navItems } from "./Navbar"
 
 export const Footer = () => {
