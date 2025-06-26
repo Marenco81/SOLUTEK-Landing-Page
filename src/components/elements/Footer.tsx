@@ -1,6 +1,7 @@
+import { navItems } from "../../utils/navItems"
 import { Container, NavItem } from "../shared"
 import logo from "/assets/icon.png"
-import { navItems } from "./Navbar"
+// import { navItems } from "./Navbar"
 
 export const Footer = () => {
   return (
