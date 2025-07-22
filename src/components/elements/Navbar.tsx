@@ -2,11 +2,22 @@ import { BtnLink, Container, NavItem } from "../shared"
 import logo from "/assets/icon.png"
 import { useThemeStore } from "../../store";
 import { navItems } from "../../utils/navItems";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 
 
 export const Navbar = () => {
   const {toggleTheme, theme} = useThemeStore();
+
+
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+    const toggleNavbar = () => {
+        setMobileDrawerOpen(!mobileDrawerOpen);
+    }
+
+
   return (
     <header className="absolute inset-x-0 top-0 z-50 py-6"> 
       <Container>
@@ -30,6 +41,12 @@ export const Navbar = () => {
           >
             <BtnLink text="Get Started" href="#cta" className="hover:bg-violet-900"></BtnLink>
           </div>
+        </div>
+
+        <div className='lg:hidden md:flex flex-col justify-end'>
+                    <button onClick={toggleNavbar} className="text-neutral-300">
+                        {mobileDrawerOpen ? <X/> : <Menu/> }
+                    </button>
         </div>
 
         <div className="min-w-max flex items-center gap-x-3">
