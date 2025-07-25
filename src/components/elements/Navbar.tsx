@@ -25,8 +25,8 @@ export const Navbar = () => {
         {/*Logo*/}
         <div className="min-w-max inline-flex relative">
           <a href="/" className="relative flex items-center gap-3">
-            <img src={logo} alt="EdgeAI Logo" className="w-10 h-10"/>
-            <div className="inline-flex text-lg font-semibold text-heading-1">EdgeAI</div>
+            <img src={logo} alt="Solutek Logo" className="w-10 h-10"/>
+            <div className="inline-flex text-4xl font-semibold text-heading-1"><span className="bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text"> SoluTek </span></div>
           </a>
         </div>
 

@@ -5,7 +5,7 @@ import { AboutUs, Brands, CallToAction, Hero, Pricing, Services } from "./compon
 function App() {
 
   return (
-    <Layout title="EdgeAI">
+    <Layout title="Solutek">
       <Hero></Hero>
       <Brands></Brands>
       <Services></Services>
