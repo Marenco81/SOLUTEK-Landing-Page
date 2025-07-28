@@ -10,7 +10,7 @@ function App() {
       <Brands></Brands>
       <Services></Services>
       <AboutUs></AboutUs>
-      <Pricing></Pricing>
+      {/* <Pricing></Pricing> */}
       <CallToAction></CallToAction>
     </Layout>
   )

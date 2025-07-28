@@ -1,4 +1,5 @@
 import { Button, Container, Paragraph } from "../shared"
+import { ContactForm } from "./ContactForm"
 
 export const CallToAction = () => {
   return (
@@ -15,6 +16,7 @@ export const CallToAction = () => {
                     </div>
                 </div>
             </div>
+            <ContactForm></ContactForm>
         </Container>
     </section>
   )
