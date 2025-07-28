@@ -1,5 +1,6 @@
 import { Button, Container, Paragraph } from "../shared"
 import { Numbers } from "./Numbers"
+import hero from "../../assets-src/images/hero-img.jpg";
 
 export const Hero = () => {
   return (
@@ -15,14 +16,14 @@ export const Hero = () => {
           </div>
 
           <div className="relative flex flex-col items-center text-center lg:text-left lg:py-8 lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
-            <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">Empower Your Business <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">with AI</span>
+            <h1 className="text-heading-1 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold">Provee a tus proyectos con <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-900 to-blue-900">soluciones técnicas.</span>
             </h1>
 
             <Paragraph className="mt-8">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex deleniti natus velit quam corporis saepe laborum vel maxime quidem ratione?
+              En el dinámico mundo de los servicios de mantenimiento e ingeniería, es crucial implementar soluciones técnicas avanzadas que optimicen los procesos y garanticen resultados eficientes.
             </Paragraph>
 
-            <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
+            {/* <div className="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
               <div className="flex sm:flex-row flex-col gap-5 w-full">
                 <form action="#" className="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-heading-3 shadow-lg shadow-box-shadow border border-box-border bg-box-bg rounded-full ease-linear focus-within:bg-body focus-within:border-primary">
                   <span className="min-w-max pr-2 border-r border-box-border">
@@ -58,12 +59,12 @@ export const Hero = () => {
 
                 
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
             <img 
-              src="https://images.pexels.com/photos/7773731/pexels-photo-7773731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+              src={hero} 
               alt="Hero image" 
               width={2350}
               height={2359}
