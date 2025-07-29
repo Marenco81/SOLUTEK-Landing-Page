@@ -1,8 +1,8 @@
 
 export const services = [
   {
-    title: "Intelligent Automation",
-    description: "Streamline processes and reduce manual tasks.",
+    title: "Mantenimiento Residencial",
+    description: "El mantenimiento residencial, tanto preventivo como correctivo, granatiza seguridad, funcionalidad y mayor durabilidad del hogar",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +21,8 @@ export const services = [
     ),
   },
   {
-    title: "Real‑Time Analytics",
-    description: "Gain actionable insights as events unfold.",
+    title: "Mantenimiento Comercial/Industrial",
+    description: "Asegura la continuidad operativa, reduce costos y prolonga la vida útil de los equipos e instalaciones con un adecuado mantenimiento.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ export const services = [
     ),
   },
   {
-    title: "Predictive Insights",
-    description: " Anticipate trends and mitigate risks before they occur.",
+    title: "Obra Civil",
+    description: "La construcción de obra civil garaniza estructuras seguras, funcionales y duraderas, cumpliendo con estándares técnicos y necesidades del entorno.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

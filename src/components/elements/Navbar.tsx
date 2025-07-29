@@ -39,7 +39,7 @@ export const Navbar = () => {
           <div 
             className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px6 lg:px-0"
           >
-            <BtnLink text="Get Started" href="#cta" className="hover:bg-violet-900"></BtnLink>
+            <BtnLink text="Get Started" href="#cta" className="hover:bg-orange-500 hover:scale-105"></BtnLink>
           </div>
         </div>
 

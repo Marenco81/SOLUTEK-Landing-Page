@@ -7,10 +7,10 @@ export const Services = () => {
     <section id="services">
         <Container className="space-y-10 md:space-y-12">
             <div className="text-center max-w-3xl mx-auto space-y-4">
-                <Title> Our AI Services</Title>
+                <Title> Nuestros Servicios</Title>
                 <Paragraph>
-                    Unlock the potencial of advance machine learning, natural language processing, and predictive analytics. 
-                    Our services include:
+                    Brindamos servicios de mantenimiento preventivo para edificaciones, con soluciones técnicas especializadas y altos estándares de calidad que aseguran el óptimo funcionamiento y conservación de las estructuras. 
+                    Nuestros servicios incluyen:
                 </Paragraph>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">

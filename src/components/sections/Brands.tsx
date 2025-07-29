@@ -8,6 +8,7 @@ const logos = [
      "spotify",
      "uber",
      "youtube",
+     "sur",
     ];
 
 export const Brands = () => {
