@@ -1,5 +1,6 @@
 import { Info } from "../cards"
-import { Container, Paragraph, Title } from "../shared"
+import { Container, Paragraph, Title } from "../shared";
+import acerca from '../../assets-src/images/AcercaDe.jpg';
 
 export const AboutUs = () => {
   return (
@@ -8,7 +9,7 @@ export const AboutUs = () => {
             <div className="w-full md:w-5/12 lg:w-1/2"> 
                 <div className="w-full h-80 sm:h-96 relative">
                     <img 
-                        src="https://images.pexels.com/photos/8728381/pexels-photo-8728381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                        src={acerca} 
                         alt="About our mission" 
                         className="w-full h-full object-cover rounded-3xl shadow-lg relative z-10"
                     />
@@ -16,20 +17,16 @@ export const AboutUs = () => {
             </div>
             <div className="w-full md:w-7/12 lg:w-1/2 flex flex-col ">
                 <Title className="mb-3">
-                    About Our AI Solution
+                    Acerca de nuestras <span className="bg-gradient-to-r from-orange-900 to-blue-900 text-transparent bg-clip-text"> Soluciones Técnicas </span> 
                 </Title>
                 <Paragraph>
-                    We are on a mission to empower businesses with transformative AI
-                    technology. Our team of experts combines industry‑leading research
-                    with innovative algorithms to deliver a platform that adapts to your
-                    unique needs. Join us and lead the digital revolution in your
-                    industry.
+                    Nos motiva llevar al sector de servicios de construcción una amplia gama de soluciones técnicas, basadas en los más altos estándares de calidad y bajo normativas internacionales para que los resultados sean los mejores, optimizando los recursos disponibles.
                 </Paragraph>
 
                 <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
                     <Info 
-                        title="Mission" 
-                        description="Our mission is to use AI for the good of humanity and the planet."
+                        title="Mision" 
+                        description="Brindar servicios de mantenimiento y construcción bajo los másaltos estándares de calidad."
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +45,8 @@ export const AboutUs = () => {
                         </svg>
                     </Info>
                     <Info 
-                        title="Vission" 
-                        description="Our vision is to drive business innovation and growth."
+                        title="Vision" 
+                        description="Ser un referente en la industria de servicios de mantenimiento y costrucción"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

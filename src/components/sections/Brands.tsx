@@ -1,13 +1,10 @@
-import { Container, Title } from "../shared"
+import { Container, Title } from "../shared";
+import proyecto1 from "../../assets-src/images/proyecto1.jpg";
+import proyecto2 from "../../assets-src/images/proyecto2.jpg";
+import proyecto3 from "../../assets-src/images/proyecto3.jpg";
+
 
 const logos = [
-    "discord",
-     "openai",
-     "paypal",
-     "slack",
-     "spotify",
-     "uber",
-     "youtube",
      "sur",
      "holcim",
      "cemex",
@@ -15,6 +12,9 @@ const logos = [
      "sika",
      "amanco",
      "ferromax",
+     "eaton",
+     "sylvania",
+     "square",
     ];
 
 export const Brands = () => {
@@ -42,6 +42,29 @@ export const Brands = () => {
                         />
                     </div>
                 ))}
+            </div>
+            <div className="flex flex-col md:flex-row justify-center items-center w-full  mx-3 gap-5"> 
+                <div className="w-full h-80 sm:h-96 relative">
+                    <img 
+                        src={proyecto1} 
+                        alt="About our mission" 
+                        className="w-full h-full object-cover rounded-3xl shadow-lg relative z-10"
+                    />
+                </div>
+                <div className="w-full h-80 sm:h-96 relative">
+                    <img 
+                        src={proyecto2} 
+                        alt="About our mission" 
+                        className="w-full h-full object-cover rounded-3xl shadow-lg relative z-10"
+                    />
+                </div>
+                <div className="w-full h-80 sm:h-96 relative">
+                    <img 
+                        src={proyecto3} 
+                        alt="About our mission" 
+                        className="w-full h-full object-cover rounded-3xl shadow-lg relative z-10"
+                    />
+                </div>
             </div>
         </Container>
     </section>
