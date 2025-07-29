@@ -4,6 +4,22 @@ import { useForm, useWatch } from "react-hook-form";
 import { Container, Title } from "../shared";
 
 export const ContactForm = () => {
+  interface ContactFormData {
+    access_key?: string;
+    subject?: string;
+    from_name?: string;
+    botcheck?: string;
+    name: string;
+    phone: string;
+    email: string;
+    message: string;
+  }
+
+  interface Web3FormsResponse {
+    success: boolean;
+    message: string;
+  }
+
   const {
     register,
     handleSubmit,
@@ -11,11 +27,11 @@ export const ContactForm = () => {
     reset,
     control,
     formState: { errors, isSubmitSuccessful, isSubmitting },
-  } = useForm({
+  } = useForm<ContactFormData>({
     mode: "onTouched",
   });
   const [isSuccess, setIsSuccess] = React.useState(false);
-  const [Message, setMessage] = React.useState("");
+  const [message, setMessage] = React.useState("");
 
   const userName = useWatch({ 
     control, 
@@ -24,7 +40,7 @@ export const ContactForm = () => {
   });
   
   useEffect(() => {
-    setValue('subject', `${userName} sent a message from Website`)
+    setValue('subject', `${userName} sent a message from Solutek`)
   }, [userName, setValue]);
 
   interface ContactFormData {
@@ -131,7 +147,7 @@ export const ContactForm = () => {
                     placeholder="Número de teléfono"
                     autoComplete="false"
                     className={`w-full px-4 py-3 border-2  rounded-md outline-none text-heading-1 focus:ring-4  ${
-                      errors.name
+                      errors.phone
                         ? "border-red-600 focus:border-red-600 ring-red-100"
                         : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
                     }`}
@@ -140,9 +156,9 @@ export const ContactForm = () => {
                       maxLength: 20,
                     })}
                   />
-                  {errors.name && (
+                  {errors.phone && (
                     <div className="mt-1 text-red-600">
-                      <small>{errors.name.message}</small>
+                      <small>{errors.phone.message}</small>
                     </div>
                   )}
                 </div>
@@ -155,7 +171,6 @@ export const ContactForm = () => {
                     id="email_address"
                     type="email"
                     placeholder="Email"
-                    name="email"
                     autoComplete="false"
                     className={`w-full px-4 py-3 border-2 text-heading-1 rounded-md outline-none  focus:ring-4  ${
                       errors.email
@@ -179,7 +194,6 @@ export const ContactForm = () => {
     
                 <div className="mb-3">
                   <textarea
-                    name="message"
                     placeholder="Mensaje"
                     className={`w-full px-4 py-3 border-2 text-heading-1 rounded-md outline-none  h-36  focus:ring-4  ${
                       errors.message
@@ -240,7 +254,7 @@ export const ContactForm = () => {
                     />
                   </svg>
                   <h3 className="py-5 text-2xl text-green-500">Success</h3>
-                  <p className="text-gray-700 md:px-3">{Message}</p>
+                  <p className="text-gray-700 md:px-3">{message}</p>
                   <button
                     className="mt-6 text-indigo-600 focus:outline-none"
                     onClick={() => reset()}>
@@ -269,7 +283,7 @@ export const ContactForm = () => {
                 <h3 className="text-2xl text-red-400 py-7">
                   Oops, Something went wrong!
                 </h3>
-                <p className="text-gray-300 md:px-3">{Message}</p>
+                <p className="text-gray-300 md:px-3">{message}</p>
                 <button className="mt-5 focus:outline-none" onClick={() => reset()}>
                   Try Again
                 </button>
