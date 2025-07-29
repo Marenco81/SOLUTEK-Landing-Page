@@ -27,7 +27,26 @@ export const ContactForm = () => {
     setValue('subject', `${userName} sent a message from Website`)
   }, [userName, setValue]);
 
-  const onSubmit = async (data, e) => {
+  interface ContactFormData {
+    access_key?: string;
+    subject?: string;
+    from_name?: string;
+    botcheck?: string;
+    name: string;
+    phone: string;
+    email: string;
+    message: string;
+  }
+
+  interface Web3FormsResponse {
+    success: boolean;
+    message: string;
+  }
+
+  const onSubmit = async (
+    data: ContactFormData,
+    e: React.BaseSyntheticEvent
+  ) => {
     console.log(data);
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -38,7 +57,7 @@ export const ContactForm = () => {
       body: JSON.stringify(data, null, 2),
     })
       .then(async (response) => {
-        const json = await response.json();
+        const json: Web3FormsResponse = await response.json();
         if (json.success) {
           setIsSuccess(true);
           setMessage(json.message);
@@ -49,7 +68,7 @@ export const ContactForm = () => {
           setMessage(json.message);
         }
       })
-      .catch((error) => {
+      .catch((error: unknown) => {
         setIsSuccess(false);
         setMessage("Client Error. Please check the console.log for more info");
         console.log(error);

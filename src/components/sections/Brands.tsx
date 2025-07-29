@@ -9,6 +9,12 @@ const logos = [
      "uber",
      "youtube",
      "sur",
+     "holcim",
+     "cemex",
+     "lanco",
+     "sika",
+     "amanco",
+     "ferromax",
     ];
 
 export const Brands = () => {
@@ -17,8 +23,9 @@ export const Brands = () => {
         <Container className="space-y-8">
             <div className="text-center max-w-3xl mx-auto">
                 <Title>
-                    Trusted by Industry Leaders
+                    Empleamos las mejores marcas del mercado.
                 </Title>
+                <h6 className="text-heading-3 text-xs lg:text-sm mt-4">*Imagenes con fines ilustrativos</h6>
             </div>
             <div className="flex justify-center flex-wrap gap-4">
                 {logos.map((logo, key) => (

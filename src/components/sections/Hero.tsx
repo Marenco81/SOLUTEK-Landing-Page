@@ -1,4 +1,4 @@
-import { Button, Container, Paragraph } from "../shared"
+import { Container, Paragraph } from "../shared"
 import { Numbers } from "./Numbers"
 import hero from "../../assets-src/images/hero-img.jpg";
 
