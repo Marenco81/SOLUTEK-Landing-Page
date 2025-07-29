@@ -11,7 +11,7 @@ function App() {
       <Services></Services>
       <AboutUs></AboutUs>
       {/* <Pricing></Pricing> */}
-      {/* <CallToAction></CallToAction> */}
+      <CallToAction></CallToAction>
     </Layout>
   )
 }
