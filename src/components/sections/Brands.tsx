@@ -38,12 +38,12 @@ export const Brands = () => {
                             alt={logo}
                             width="100"
                             height="60" 
-                            className="h-7 sm:h-10 w-auto ease-linear duration-300 grayscale group-hover:!grayscale-0 group-hover:scale-105 "
+                            className="h-7 sm:h-10 w-auto ease-linear duration-300 dark:grayscale group-hover:!grayscale-0 group-hover:scale-105 "
                         />
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col md:flex-row justify-center items-center w-full  mx-3 gap-5"> 
+            <div className="flex flex-col md:flex-row justify-center items-center w-full mt-20 mx-3 gap-5"> 
                 <div className="w-full h-80 sm:h-96 relative">
                     <img 
                         src={proyecto1} 

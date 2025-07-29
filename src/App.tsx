@@ -1,5 +1,5 @@
 import { Layout } from "./components/Layout"
-import { AboutUs, Brands, CallToAction, Hero, Pricing, Services } from "./components/sections"
+import { AboutUs, Brands, CallToAction, Hero, Services } from "./components/sections"
 
 
 function App() {
