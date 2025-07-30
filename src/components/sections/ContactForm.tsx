@@ -61,7 +61,7 @@ export const ContactForm = () => {
 
   const onSubmit = async (
     data: ContactFormData,
-    e: React.BaseSyntheticEvent
+    e?: React.BaseSyntheticEvent
   ) => {
     console.log(data);
     await fetch("https://api.web3forms.com/submit", {
@@ -77,7 +77,7 @@ export const ContactForm = () => {
         if (json.success) {
           setIsSuccess(true);
           setMessage(json.message);
-          e.target.reset();
+          if (e) e.target.reset();
           reset();
         } else {
           setIsSuccess(false);
