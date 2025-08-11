@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 assets
-assets-src
+# assets-src
 
 node_modules
 dist

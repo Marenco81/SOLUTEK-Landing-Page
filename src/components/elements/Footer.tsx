@@ -22,16 +22,16 @@ export const Footer = () => {
                 </NavItem>
               ))}
             </ul>
-            <div className="mr-15 ml-10">
-              <ul className="flex sm:flex-col flex-row gap-3 text-heading-1 text-sm">
+            <div className="mr-15 ml-10 mt-5">
+              <ul className="flex sm:flex-col flex-row gap-3 text-heading-1 text-sm wrap">
               {/* {contactItems.map((item, key) => (
                 <NavItem key={key} href={item.href} text={item.text}>
                   
                 </NavItem>
               ))} */}
-              <li><a href="https://wa.me/50670247365?text=Hola,%20quisiera%20comunicarme%20con%20ustedes." target="_blank" rel="noopener noreferrer" className="flex flex-row text-lg ease-linear hover:text-orange-900"><BsWhatsapp /><span className="ml-3">+506 7024-7365</span></a></li>
-              <li><a href="#" className="flex flex-row text-lg ease-linear hover:text-orange-900"><CiFacebook /><span className="ml-3"> Solutek</span></a></li>
-              <li><a href="tel:70247365" className="flex flex-row text-lg ease-linear hover:text-orange-900"><BsTelephoneOutbound /><span className="ml-3">+506 7024-7365</span></a></li>
+              <li><a href="https://wa.me/50670247365?text=Hola,%20quisiera%20comunicarme%20con%20ustedes." target="_blank" rel="noopener noreferrer" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><BsWhatsapp /><span className="ml-3">+506 7024-7365</span></a></li>
+              <li><a href="#" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><CiFacebook /><span className="ml-3"> Solutek</span></a></li>
+              <li><a href="tel:70247365" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><BsTelephoneOutbound /><span className="ml-3">+506 7024-7365</span></a></li>
             </ul>
             </div>
           </div>
