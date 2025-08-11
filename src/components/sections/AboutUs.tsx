@@ -26,7 +26,7 @@ export const AboutUs = () => {
                 <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
                     <Info 
                         title="Mision" 
-                        description="Brindar servicios de mantenimiento y construcción bajo los másaltos estándares de calidad."
+                        description="Brindar servicios de mantenimiento y construcción bajo los más altos estándares de calidad."
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ export const AboutUs = () => {
                         </svg>
                     </Info>
                     <Info 
-                        title="Vision" 
-                        description="Ser un referente en la industria de servicios de mantenimiento y costrucción"
+                        title="Visión" 
+                        description="Ser un referente en la industria de servicios de mantenimiento y costrucción."
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

@@ -21,7 +21,7 @@ export const services = [
     ),
   },
   {
-    title: "Mantenimiento Comercial/Industrial",
+    title: "Mantenimiento Comercial / Industrial",
     description: "Asegura la continuidad operativa, reduce costos y prolonga la vida útil de los equipos e instalaciones con un adecuado mantenimiento.",
     icon: (
       <svg
