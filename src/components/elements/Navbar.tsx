@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
-    }
+    };
 
 
   return (
@@ -43,8 +43,8 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className='lg:hidden md:flex flex-col justify-end'>
-                    <button onClick={toggleNavbar} className="text-neutral-300 z-30">
+        <div className='lg:hidden flex flex-col justify-end'>
+                    <button onClick={toggleNavbar} className="text-neutral-300 z-100">
                         {mobileDrawerOpen ? <X/> : <Menu/> }
                     </button>
         </div>
@@ -59,11 +59,11 @@ export const Navbar = () => {
                         ))}
                     </ul>
                     <div className='flex justify-center space-x-12 items-center ml-6 mt-10'>
-                    <a href="#" className='py-2 px-3 border rounded-md hover:bg-amber-50 hover:text-black hover:rounded-md hover:font-semibold '>
+                    {/* <a href="#" className='py-2 px-3 border rounded-md hover:bg-amber-50 hover:text-black hover:rounded-md hover:font-semibold '>
                         Sign In
-                    </a>
-                    <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 ml-2 rounded-md hover:scale-105'>
-                        Create an account
+                    </a> */}
+                    <a href="#cta" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 ml-2 rounded-md hover:scale-105 w-50'>
+                        Formulario de Contacto
                     </a>
                 </div>
                 </div>
