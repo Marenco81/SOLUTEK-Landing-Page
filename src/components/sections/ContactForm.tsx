@@ -97,7 +97,7 @@ export const ContactForm = () => {
         <Title className="mb-3 text-center">Formulario de Contacto</Title>
           <div className="w-full max-w-sm mx-auto my-5 border border-gray-100 rounded-md p-7">
             {!isSubmitSuccessful && (
-              <form id="cta" onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <input
                   type="hidden"
                   value="69535395-d3cd-46e5-b01a-c877490962f1"
