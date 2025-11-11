@@ -26,7 +26,11 @@ export const Navbar = () => {
         <div className="min-w-max inline-flex relative">
           <a href="/" className="relative flex items-center gap-3">
             <img src={logo} alt="Solutek Logo" className="w-10 h-10"/>
-            <div className="inline-flex text-4xl font-semibold text-heading-1"><span className="bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text"> SoluTek </span></div>
+            <div className="flex flex-col items-center">
+              <div className="inline-flex text-4xl font-semibold text-heading-1"><span className="bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text"> SoTek </span></div>
+              <p className="text-md font-semibold bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text">Soluciones Técnicas en Costrucción</p>
+
+            </div>
           </a>
         </div>
 
@@ -39,11 +43,11 @@ export const Navbar = () => {
           <div 
             className="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-border lg:border-0 px6 lg:px-0"
           >
-            <BtnLink text="Get Started" href="#cta" className="hover:bg-orange-500 hover:scale-105"></BtnLink>
+            <BtnLink text="Empecemos!" href="#cta" className="hover:bg-orange-500 hover:scale-105"></BtnLink>
           </div>
         </div>
 
-        <div className='lg:hidden flex flex-col justify-end'>
+        <div className='lg:hidden flex flex-col justify-center'>
                     <button onClick={toggleNavbar} className="text-neutral-300 z-100">
                         {mobileDrawerOpen ? <X/> : <Menu/> }
                     </button>

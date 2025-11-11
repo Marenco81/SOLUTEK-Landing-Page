@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 function App() {
 
   return (
-    <Layout title="SOLUTEK">
+    <Layout title="SOTEK-Soluciones Tecnicas en Construcción">
       <Helmet>
         <meta charSet="utf-8"/>
         <meta name="description" content="Soluciones Tecnicas en mantenimiento, ingeniería y construcción. Mantenimiento preventivo y correctivo. Contratistas."/>
