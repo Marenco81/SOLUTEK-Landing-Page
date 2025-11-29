@@ -1,5 +1,6 @@
 import { BtnLink, Container, NavItem } from "../shared"
-import logo from "/assets/icon.png"
+// import logo from "/assets/icon.png"
+import logo from "../../assets-src/logo.png"
 import { useThemeStore } from "../../store";
 import { navItems } from "../../utils/navItems";
 import { useState } from "react";
@@ -25,7 +26,7 @@ export const Navbar = () => {
         {/*Logo*/}
         <div className="min-w-max inline-flex relative">
           <a href="/" className="relative flex items-center gap-3">
-            <img src={logo} alt="Solutek Logo" className="w-10 h-10"/>
+            <img src={logo} alt="Solutek Logo" className="w-20 h-20"/>
             <div className="flex flex-col items-center">
               <div className="inline-flex text-4xl font-semibold text-heading-1"><span className="bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text"> SoTek </span></div>
               <p className="text-md font-semibold bg-gradient-to-r from-orange-900 to-blue-950 text-transparent bg-clip-text">Soluciones Técnicas en Costrucción</p>
