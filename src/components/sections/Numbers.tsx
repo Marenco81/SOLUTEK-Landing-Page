@@ -6,11 +6,11 @@ export const Numbers = () => {
         <Container className="flex justify-center items-center">
             <div className="mx-auto lg:mx-0 p-5 sm:p-6 sm:py-8 max-w-5xl rounded-3xl bg-box-bg border border-box-border shadow-lg shadow-box-shadow md:divide-x divide-box-border grid grid-cols-2 md:grid-cols-4">
                 <div className="text-center px-5">
-                    <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">50 +</h2>
+                    <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">35 +</h2>
                     <p className="mt-2 text-heading-3">Proyectos ejecutados</p>
                 </div>
                 <div className="text-center px-5">
-                    <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">75 +</h2>
+                    <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl text-heading-1">20 +</h2>
                     <p className="mt-2 text-heading-3">Socios comerciales</p>
                 </div>
                 <div className="text-center px-5">

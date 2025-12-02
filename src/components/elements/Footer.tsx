@@ -30,7 +30,7 @@ export const Footer = () => {
                 </NavItem>
               ))} */}
               <li><a href="https://wa.me/50670247365?text=Hola,%20quisiera%20comunicarme%20con%20ustedes." target="_blank" rel="noopener noreferrer" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><BsWhatsapp /><span className="ml-3">+506 7024-7365</span></a></li>
-              <li><a href="#" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><CiFacebook /><span className="ml-3"> Solutek</span></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61584560732276&sk=about" target="_blank" rel="noopener noreferrer" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><CiFacebook className="text-2xl mr-3" /><span className="ml-3"> Sotek CR</span></a></li>
               <li><a href="tel:70247365" className="flex flex-row text-sm md:text-lg ease-linear hover:text-orange-900"><BsTelephoneOutbound /><span className="ml-3">+506 7024-7365</span></a></li>
             </ul>
             </div>
